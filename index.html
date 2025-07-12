@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="images/logo.png" alt="My Company Logo" />
+      </div>
+
+      <!-- 🔹 Add the mobile menu toggle here -->
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li class="dropdown">
+            <a href="#">Features</a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Feature 1</a></li>
+              <li><a href="#">Feature 2</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#">Services</a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Service 1</a></li>
+              <li><a href="#">Service 2</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h1>Welcome to Our Site</h1>
+      <p>Your solution starts here.</p>
+      <a href="#contact" class="cta-button">Get Started</a>
+    </section>
+
+    <section class="features">
+      <div class="feature">
+        <h2>Fast</h2>
+        <p>Lightning-fast performance.</p>
+      </div>
+      <div class="feature">
+        <h2>Secure</h2>
+        <p>Top-notch security features.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-form">
+      <h2>Contact Us</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message"></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>
+        &copy; 2025 MyCompany. <a href="#">Privacy Policy</a> |
+        <a href="#">Terms of Service</a>
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
